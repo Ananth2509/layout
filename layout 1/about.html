@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .navbar-custom {
+            background-color: #00005A;
+            padding-top: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+
+            font-size: 2em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #ffa02d !important;
+        }
+
+        .navbar-logo {
+            height: 80px;
+            width: 80px;
+        }
+
+        .login-btn {
+            background-color: #ffa02d;
+            color: rgb(2, 2, 87);
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .icon-btn {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .icon-btn:hover {
+            color: #ffa02d;
+        }
+
+        .icon {
+            margin-right: 50px;
+
+        }
+
+        .custom-section {
+            background: linear-gradient(to right, #e8ebed, #0d2a44);
+            border-radius: 20px;
+            padding: 40px;
+            color: #fff;
+            font-size: 1.7em;
+        }
+
+        .custom-section h5 {
+            color: #f5b041;
+            /* gold/orange heading */
+            font-weight: 600;
+        }
+
+        .product-images img {
+            max-height: 500px;
+            margin: 10px;
+        }
+
+        .custom-section-2 {
+            background: linear-gradient(to right, #0d2a44, #e8ebed);
+            border-radius: 20px;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .custom-section-2 p {
+            font-size: 1.7em;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .custom-section-2 img {
+            border-radius: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .custom-section-3 {
+            background: linear-gradient(to right, #e8ebed, #0d2a44);
+            border-radius: 20px;
+            padding: 50px;
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .custom-section-3 ul {
+            margin-top: 20px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .custom-section-3 li {
+            margin-bottom: 12px;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .custom-section-3 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .custom-section-4 {
+            background: linear-gradient(to right, #0d2a44, #e8ebed);
+            border-radius: 20px;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .custom-section-4 h6 {
+            color: #f5b041;
+            /* orange/gold heading */
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 1.7em;
+        }
+
+        .custom-section-4 p {
+            font-size: 1.7em;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .custom-section-4 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .custom-section-5 {
+            background: linear-gradient(to right, #cfd8dc, #0d2a44);
+            border-radius: 20px;
+            padding: 50px;
+            color: #fff;
+
+        }
+
+        .custom-section-5 h5 {
+            font-weight: 700;
+            color: #f5b041;
+            /* orange heading */
+            margin-bottom: 15px;
+            font-size: 1.7em;
+        }
+
+        .custom-section-5 p {
+            font-size: 1.7em;
+            line-height: 1.7;
+        }
+
+        .custom-section-5 img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .subscribe-btn {
+            background-color: #fdb913;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #052b45;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-section h5 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tagline {
+            font-family: 'Georgia', serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom px-4">
+        <a class="navbar-brand" href="#">
+            <img src="image/logo_1-removebg-preview.png" alt="Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center icon">
+                <a href="cart.html"><i class='bx bx-cart-add icon-btn'></i></a>
+                <a href="wishlist.html"><i class='bx bx-heart icon-btn'></i></a>
+                <a href="login.html"><button class="login-btn ms-2">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <h1 style="text-align: center; font-weight: bold;">About us</h1>
+    <div class="container my-5">
+        <div class="row align-items-center custom-section">
+            <!-- Left: Images -->
+            <div class="col-md-6 text-center product-images">
+                <img src="image/71b43728-f5f2-4d61-bd9c-04c0442f612b_removalai_preview 1.png" class="img-fluid" alt="iPhone"
+                    width="500px">
+            </div>
+
+            <!-- Right: Text -->
+            <div class="col-md-6 text-white">
+                <h5>Smarter Living Starts Here</h5>
+                <p class="mt-3">
+                    Welcome to tech nova, your go-to destination for the most innovative smart
+                    electronics and lifestyle-enhancing gadgets. We’re more than just an online
+                    store—we’re a community of tech lovers, problem-solvers, and forward-thinkers
+                    who believe that technology should improve everyday life in practical and
+                    exciting ways.
+                </p>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center; font-weight: bold;">Who we are</h1>
+    <div class="container my-5">
+        <div class="row align-items-center custom-section-2">
+
+            <!-- Left: Text -->
+            <div class="col-md-6 text-center text-md-start">
+                <p>
+                    Founded in 1999 by a team of passionate engineers and designers, Tech nova began with a simple goal:
+                    to bring the future into the present.
+                    We saw a gap in the market for affordable, reliable, and truly smart technology—and we stepped in to
+                    fill it.
+                </p>
+                <p class="mt-4">
+                    From humble beginnings, we've grown into a trusted platform for tech enthusiasts, early adopters,
+                    and everyday users who want products
+                    that work seamlessly, look sleek, and solve real-life problems.
+                </p>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="col-md-6 text-center">
+                <img src="image/second.png" alt="Tech Products">
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align: center; font-weight: bold;">what we do</h1>
+    <div class="container my-5">
+        <div class="row align-items-center custom-section-3">
+
+            <!-- Left: Image -->
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="image/67e88669-ef14-41be-93b6-326ef25e4ab0_removalai_preview 1.png" alt="Product Showcase">
+            </div>
+
+            <!-- Right: Text -->
+            <div class="col-md-6">
+                <p>
+                    We specialize in curating and delivering high-quality smart gadgets that make life easier, more
+                    efficient,
+                    and more fun. Our product lineup includes:
+                </p>
+                <ul>
+                    <li>Smart home devices (security cameras, smart lights, thermostats, plugs)</li>
+                    <li>Wearable technology (smartwatches, fitness trackers, health monitors)</li>
+                    <li>Wireless charging and power solutions</li>
+                    <li>Mobile accessories and innovative personal tech</li>
+                    <li>Lifestyle gadgets you won’t find anywhere else</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <h1 style="text-align: center; font-weight: bold;">Why choose us?</h1>
+    <div class="container my-5">
+        <div class="row align-items-center custom-section-4">
+
+            <!-- Left: Text -->
+            <div class="col-md-6">
+                <h6>Innovation First:</h6>
+                <p>We stay on the cutting edge of technology trends to bring you the latest and greatest.</p>
+
+                <h6>Customer-Centric:</h6>
+                <p>Our team is always here to help—with fast, friendly support and no tech jargon.</p>
+
+                <h6>Quality Guaranteed:</h6>
+                <p>Every product we sell is backed by our commitment to quality and satisfaction.</p>
+
+                <h6>Fast & Secure Shipping:</h6>
+                <p>We ensure your orders are delivered quickly, safely, and reliably.</p>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="col-md-6 text-center">
+                <img src="image/5d0a5c85-9899-4b9c-977b-10cb9d02285f_removalai_preview 1.png" alt="Smartwatches">
+            </div>
+
+        </div>
+    </div>
+    <h1 style="text-align: center; font-weight: bold;">Our mission</h1>
+    <div class="container my-5">
+        <div class="row align-items-center custom-section-5">
+
+            <!-- Left: Image -->
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="image/9f9aaeb9-fe95-43bd-a875-524a71a4da8a_removalai_preview 1.png" alt="Portable Speakers">
+            </div>
+
+            <!-- Right: Mission Text -->
+            <div class="col-md-6">
+                <h5>Our mission is simple:</h5>
+                <p>
+                    To make smart technology accessible to everyone. We believe in a future where your devices don’t
+                    just work—they work for you.
+                    Whether you're automating your home, staying fit with wearables, or exploring the world of portable
+                    tech,
+                    we’re here to help you do it smarter.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center py-5">
+
+        <div class="d-flex justify-content-center mb-4 gap-3">
+            <img src="image/delonghi-seeklogo.png" alt="Delonghi" class="logo" width="250px" height="250px">
+            <img src="image/devialet-seeklogo.png" alt="Devialet" class="logo" width="250px" height="250px">
+            <img src="image/dell-seeklogo.png" alt="Dell" class="logo" width="250px" height="250px">
+            <img src="image/cuisinart-seeklogo.png" alt="Cuisinart" class="logo" width="250px" height="250px">
+            <img src="image/ferrari-seeklogo.png" alt="Ferrari" class="logo" width="250px" height="250px">
+            <img src="image/bose-seeklogo.png" alt="Bose" class="logo" width="250px" height="250px">
+            <img src="image/hp-seeklogo.png" alt="HP" class="logo">
+        </div>
+
+
+        <h2 class="mb-3">Weekly Newsletter</h2>
+        <p class="mb-4">Join Our Community And Never Miss An Update.</p>
+
+
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control me-2" placeholder="enter mail id" required>
+            <button class="btn subscribe-btn" type="submit">subscribe</button>
+        </form>
+    </div>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <img src="image/logo_1-removebg-preview.png" alt="Tech Nova Logo" class="footer-logo mb-2">
+                    <p class="tagline">“GADGETS REFINED.<br>QUALITY DEFINED.”</p>
+                </div>
+
+
+                <div class="col-md-2 footer-section mb-4">
+                    <h5>Our Store</h5>
+                    <ul class="list-unstyled">
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Shipping & Delivery</li>
+                        <li>FAQ’s</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 footer-section mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Condition</li>
+                        <li>Return & Exchange</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-section mb-4">
+                    <h5>Contact</h5>
+                    <p><i class='bx bx-location-plus'></i> 36, Ramakrishnapuram,<br>Thindugal - 657 984</p>
+                    <p><i class='bx bxs-phone'></i> 89378 64789, 64784 56483</p>
+                    <p><i class='bx bx-envelope'></i> Technova@Electronis.in</p>
+                </div>
+            </div>
+
+
+            <div class="row border-top pt-3 mt-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 copyright">Copyright © TECH NOVA. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="me-3 fw-bold">Follow Us</span>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-instagram fs-3'></i></a>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-facebook fs-3'></i></a>
+                    <a href="#" class="text-white"><i class='bx bxl-google fs-3'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

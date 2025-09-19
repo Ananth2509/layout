@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Nova Navbar</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .navbar-custom {
+            background-color: #00005A;
+            padding-top: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+
+            font-size: 2em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #ffa02d !important;
+        }
+
+        .navbar-logo {
+            height: 80px;
+            width: 80px;
+        }
+
+        .login-btn {
+            background-color: #ffa02d;
+            color: rgb(2, 2, 87);
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .icon-btn {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .icon-btn:hover{
+            color: #ffa02d;
+    
+        }
+
+        .icon {
+            margin-right: 50px;
+
+        }
+
+        .card {
+            width: 400px;
+            max-height: auto;
+            text-align: center;
+            margin-left: 80px;
+            padding: 10px;
+            line-height: 1.1;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .add {
+            font-size: 2.5em;
+        }
+
+        .heart {
+            opacity: 0;
+        }
+
+        .del {
+            opacity: 0;
+        }
+
+        .price {
+            font-size: 1.5em;
+            color: rgb(2, 2, 87);
+        }
+
+        .card:hover {
+            .heart {
+                opacity: 1;
+                text-align: end;
+                font-size: 2em;
+            }
+
+            .del {
+                opacity: 1;
+                text-align: end;
+                font-size: 2em;
+            }
+        }
+
+        .logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .subscribe-btn {
+            background-color: #fdb913;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #052b45;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-section h5 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tagline {
+            font-family: 'Georgia', serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom px-4">
+        <a class="navbar-brand" href="#">
+            <img src="image/logo_1-removebg-preview.png" alt="Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center icon">
+                <a href="cart.html"><i class='bx bx-cart-add icon-btn'></i></a>
+                <a href="wishlist.html"><i class='bx bx-heart icon-btn'></i></a>
+                <a href="login.html"><button class="login-btn ms-2">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <h2 class="add">CARD</h2><br>
+
+    <div class="card">
+        <p class="heart"><i class='bx bx-heart'></i></p>
+        <img src="image/image (52).png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">CUISINART GRIND & BREW AUTOMATIC<br>COFFEE MAKER</p>
+        </div>
+        <div class="price">Rs.15,000 </div>
+        <p class="del"><i class='bx bx-trash'></i></p>
+    </div>
+
+    <div class="container text-center py-5">
+
+        <div class="d-flex justify-content-center mb-4 gap-3">
+            <img src="image/delonghi-seeklogo.png" alt="Delonghi" class="logo" width="250px" height="250px">
+            <img src="image/devialet-seeklogo.png" alt="Devialet" class="logo" width="250px" height="250px">
+            <img src="image/dell-seeklogo.png" alt="Dell" class="logo" width="250px" height="250px">
+            <img src="image/cuisinart-seeklogo.png" alt="Cuisinart" class="logo" width="250px" height="250px">
+            <img src="image/ferrari-seeklogo.png" alt="Ferrari" class="logo" width="250px" height="250px">
+            <img src="image/bose-seeklogo.png" alt="Bose" class="logo" width="250px" height="250px">
+            <img src="image/hp-seeklogo.png" alt="HP" class="logo">
+        </div>
+
+
+        <h2 class="mb-3">Weekly Newsletter</h2>
+        <p class="mb-4">Join Our Community And Never Miss An Update.</p>
+
+
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control me-2" placeholder="enter mail id" required>
+            <button class="btn subscribe-btn" type="submit">subscribe</button>
+        </form>
+    </div>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <img src="image/logo_1-removebg-preview.png" alt="Tech Nova Logo" class="footer-logo mb-2">
+                    <p class="tagline">“GADGETS REFINED.<br>QUALITY DEFINED.”</p>
+                </div>
+
+
+                <div class="col-md-2 footer-section mb-4">
+                    <h5>Our Store</h5>
+                    <ul class="list-unstyled">
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Shipping & Delivery</li>
+                        <li>FAQ’s</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 footer-section mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Condition</li>
+                        <li>Return & Exchange</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-section mb-4">
+                    <h5>Contact</h5>
+                    <p><i class='bx bx-location-plus'></i> 36, Ramakrishnapuram,<br>Thindugal - 657 984</p>
+                    <p><i class='bx bxs-phone'></i> 89378 64789, 64784 56483</p>
+                    <p><i class='bx bx-envelope'></i> Technova@Electronis.in</p>
+                </div>
+            </div>
+
+
+            <div class="row border-top pt-3 mt-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 copyright">Copyright © TECH NOVA. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="me-3 fw-bold">Follow Us</span>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-instagram fs-3'></i></a>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-facebook fs-3'></i></a>
+                    <a href="#" class="text-white"><i class='bx bxl-google fs-3'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
