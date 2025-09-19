@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background-color: #00005A;
+            padding-top: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+
+            font-size: 2em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #ffa02d !important;
+        }
+
+        .navbar-logo {
+            height: 80px;
+            width: 80px;
+        }
+
+        .login-btn {
+            background-color: #ffa02d;
+            color: rgb(2, 2, 87);
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .icon-btn {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .icon-btn:hover {
+            color: #ffa02d;
+        }
+
+        .icon {
+            margin-right: 50px;
+
+        }
+
+        .category-card {
+            background: #0d2a44;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            height: 300px;
+            width: 320px;
+        }
+
+        .category-card img {
+            height: 200px;
+            width: 280px;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .category-card h5 {
+            margin-top: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .product-card img {
+            max-height: 200px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h6 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0d2a44;
+        }
+
+        .logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .subscribe-btn {
+            background-color: #fdb913;
+            color: #fff;
+        }
+
+
+        footer {
+            background-color: #052b45;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-section h5 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tagline {
+            font-family: 'Georgia', serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom px-4">
+        <a class="navbar-brand" href="#">
+            <img src="logo_1-removebg-preview.png" alt="Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center icon">
+                <a href="cart.html"><i class='bx bx-cart-add icon-btn'></i></a>
+                <a href="wishlist.html"><i class='bx bx-heart icon-btn'></i></a>
+                <a href="login.html"><button class="login-btn ms-2">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5 card ">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="image (6).png" alt="iPhone 12">
+                    <h5>Mobiles</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image 13.png" alt="iPhone 16 Plus">
+                    <h6>Apple iPhone 16 Plus 128GB Sim Free Mobile</h6>
+                    <div class="price">Rs. 67,500</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (15).png" alt="Samsung Galaxy A15">
+                    <h6>Samsung Galaxy A15 Double Sim</h6>
+                    <div class="price">Rs. 60,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (16).png" alt="OnePlus 12">
+                    <h6>Smartphone OnePlus 12 5G 16/512GB Green</h6>
+                    <div class="price">Rs. 45,000</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="image (7).png" alt="iPhone 12">
+                    <h5>Airpods</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (20).png" alt="iPhone 16 Plus">
+                    <h6>Samsung Galaxy Buds</h6>
+                    <div class="price">Rs. 16,500</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (21).png" alt="Samsung Galaxy A15">
+                    <h6>A9 pro Airpods | Screen<br>Airpods A9 Pro Lcd Earbuds</h6>
+                    <div class="price">Rs. 20,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (22).png" alt="OnePlus 12">
+                    <h6>Apple's Airpods 3</h6>
+                    <div class="price">Rs. 20,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="image (8).png" alt="iPhone 12">
+                    <h5>Laptops</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (28).png" alt="iPhone 16 Plus">
+                    <h6>Shop Techprotectus<br>Macbook Case for 2022 2025</h6>
+                    <div class="price">Rs. 1,16,500</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (30).png" alt="Samsung Galaxy A15">
+                    <h6>Apple macbook pro</h6>
+                    <div class="price">Rs. 60,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (29).png" alt="OnePlus 12">
+                    <h6>Asus inspire gen 3 </h6>
+                    <div class="price">Rs. 45,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="image (10).png" alt="iPhone 12">
+                    <h5>Smart Watches</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (32).png" alt="iPhone 16 Plus">
+                    <h6>Shop Techprotectus<br>Macbook Case for 2022 2025</h6>
+                    <div class="price">Rs. 1,16,500</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (34).png" alt="Samsung Galaxy A15">
+                    <h6>Apple macbook pro</h6>
+                    <div class="price">Rs. 60,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (33).png" alt="OnePlus 12">
+                    <h6>Asus inspire gen 3 </h6>
+                    <div class="price">Rs. 45,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="CUISINART_220V_PROFESSIONAL 1.png" alt="iPhone 12">
+                    <h5>cuisinart</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="vertical-waffle-maker-cuisinart-waffle-maker-waf-v100-silver-best-waffle-maker-in-indiawaffle-makerglobal-gadgets-597046_400x_crop_center (1).png"
+                        alt="iPhone 16 Plus">
+                    <h6>Cuisinart waffle maker</h6>
+                    <div class="price">Rs. 11,999</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (45).png" alt="Samsung Galaxy A15">
+                    <h6>Cuisinart ice cream</h6>
+                    <div class="price">Rs. 21,000</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (4).png" alt="OnePlus 12">
+                    <h6>Cuisinart ice cream <br>Machine and gelato maker </h6>
+                    <div class="price">Rs. 49,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="image (50).png" alt="iPhone 12">
+                    <h5>G3 Ferrari</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (48).png" alt="iPhone 16 Plus">
+                    <h6>G3 ferrari friggisano BBq Air fryer and grill</h6>
+                    <div class="price">Rs. 27,500</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (49).png" alt="Samsung Galaxy A15">
+                    <h6>G3 Ferrari Belcabelo Travel <br>Hair dryer double sim</h6>
+                    <div class="price">Rs. 2,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (47).png" alt="OnePlus 12">
+                    <h6>G3 Ferrari Friggisano XXl<br>Air Fryer</h6>
+                    <div class="price">Rs. 18,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Category Card (Mobiles Overview) -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <img src="nespresso-gran-lattissma-blackcoffee-machinesglobal-gadgets-412689_400x_crop_center 1.png"
+                        alt="iPhone 12">
+                    <h5>Coffee Machines</h5>
+                </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (51).png" alt="iPhone 16 Plus">
+                    <h6>Cuisinart Grind & Brew <br>Automatic Coffee maker</h6>
+                    <div class="price">Rs. 15,000</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (52).png" alt="Samsung Galaxy A15">
+                    <h6>Nespresso Citiz & MIlk <br>Coffee Machine ,Black</h6>
+                    <div class="price">Rs. 38,500</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="image (53).png" alt="OnePlus 12">
+                    <h6>Nespresso Gran Lattissima, <br>Black</h6>
+                    <div class="price">Rs. 60,000</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center py-5">
+
+        <div class="d-flex justify-content-center mb-4 gap-3">
+            <img src="delonghi-seeklogo.png" alt="Delonghi" class="logo" width="250px" height="250px">
+            <img src="devialet-seeklogo.png" alt="Devialet" class="logo" width="250px" height="250px">
+            <img src="dell-seeklogo.png" alt="Dell" class="logo" width="250px" height="250px">
+            <img src="cuisinart-seeklogo.png" alt="Cuisinart" class="logo" width="250px" height="250px">
+            <img src="ferrari-seeklogo.png" alt="Ferrari" class="logo" width="250px" height="250px">
+            <img src="bose-seeklogo.png" alt="Bose" class="logo" width="250px" height="250px">
+            <img src="hp-seeklogo.png" alt="HP" class="logo">
+        </div>
+
+
+        <h2 class="mb-3">Weekly Newsletter</h2>
+        <p class="mb-4">Join Our Community And Never Miss An Update.</p>
+
+
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control me-2" placeholder="enter mail id" required>
+            <button class="btn subscribe-btn" type="submit">subscribe</button>
+        </form>
+    </div>
+
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <img src="logo_1-removebg-preview.png" alt="Tech Nova Logo" class="footer-logo mb-2">
+                    <p class="tagline">“GADGETS REFINED.<br>QUALITY DEFINED.”</p>
+                </div>
+
+
+                <div class="col-md-2 footer-section mb-4">
+                    <h5>Our Store</h5>
+                    <ul class="list-unstyled">
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Shipping & Delivery</li>
+                        <li>FAQ’s</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 footer-section mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Condition</li>
+                        <li>Return & Exchange</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-section mb-4">
+                    <h5>Contact</h5>
+                    <p><i class='bx bx-location-plus'></i> 36, Ramakrishnapuram,<br>Thindugal - 657 984</p>
+                    <p><i class='bx bxs-phone'></i> 89378 64789, 64784 56483</p>
+                    <p><i class='bx bx-envelope'></i> Technova@Electronis.in</p>
+                </div>
+            </div>
+
+
+            <div class="row border-top pt-3 mt-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 copyright">Copyright © TECH NOVA. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="me-3 fw-bold">Follow Us</span>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-instagram fs-3'></i></a>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-facebook fs-3'></i></a>
+                    <a href="#" class="text-white"><i class='bx bxl-google fs-3'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

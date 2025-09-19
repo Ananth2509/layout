@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Nova Navbar</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .navbar-custom {
+            background-color: #00005A;
+            padding-top: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+
+            font-size: 2em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: #ffa02d !important;
+        }
+
+        .navbar-logo {
+            height: 80px;
+            width: 80px;
+        }
+
+        .login-btn {
+            background-color: #ffa02d;
+            color: rgb(2, 2, 87);
+            border-radius: 10px;
+            font-size: 1.5em;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .icon-btn {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .icon-btn:hover {
+            color: #ffa02d;
+           
+        }
+
+        .icon {
+            margin-right: 50px;
+
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .form-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 16px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .image-box {
+            background-color: #ffa20d;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .btn {
+            background-color: #ffa20d;
+            color: rgb(2, 2, 87);
+            font-size: 1.8em;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        .end-1 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .end h2 {
+            font-size: 1.5em;
+            color: rgb(2, 2, 87);
+            font-weight: bold;
+        }
+
+        .end-2 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .logo {
+            max-height: 50px;
+            margin-right: 20px;
+        }
+
+        .subscribe-btn {
+            background-color: #fdb913;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #052b45;
+            color: white;
+            font-size: 25px;
+        }
+
+        .footer-logo {
+            width: 150px;
+        }
+
+        .footer-section h5 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .tagline {
+            font-family: 'Georgia', serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom px-4">
+        <a class="navbar-brand" href="#">
+            <img src="logo_1-removebg-preview.png" alt="Logo" class="navbar-logo">
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center icon">
+                <a href="cart.html"><i class='bx bx-cart-add icon-btn'></i></a>
+                <a href="wishlist.html"><i class='bx bx-heart icon-btn'></i></a>
+                <a href="login.html"><button class="login-btn ms-2">Login</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="row align-items-center">
+            <!-- Left Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Name*</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mobile" class="form-label">Mobile Number*</label>
+                        <input type="text" id="mobile" class="form-control" placeholder="Enter mobile number">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email Id*</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password*</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn w-100">Submit</button>
+                </form>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-md-6 text-center">
+                <div class="image-box">
+                    <img src="55d62ad5-1eb4-49f2-9be3-9ddc3bcaf2ab_removalai_preview 1.png" alt="Gadgets">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col end-1">
+                    <h2>SHOWROOM</h2>
+                    <p>36,Ramakrishnapuram,<br>Thindugal-657 984<br>Email: Info@Technova.co.in<br>Hotline:011
+                        47078686/8787<br>Mobile:89378 64789 | 98112 27022</p>
+                </div>
+                <div class="col end-2">
+                    <h2>CORPORATE OFFICE</h2>
+                    <p>R-546, Rs Puram Gandhipark,<br>Thindugal -657 984<br>Email: Info@Technova.co.in<br>Hotline:011
+                        45202020<br>Mobile: 64784 6483</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container text-center py-5">
+
+        <div class="d-flex justify-content-center mb-4 gap-3">
+            <img src="delonghi-seeklogo.png" alt="Delonghi" class="logo" width="250px" height="250px">
+            <img src="devialet-seeklogo.png" alt="Devialet" class="logo" width="250px" height="250px">
+            <img src="dell-seeklogo.png" alt="Dell" class="logo" width="250px" height="250px">
+            <img src="cuisinart-seeklogo.png" alt="Cuisinart" class="logo" width="250px" height="250px">
+            <img src="ferrari-seeklogo.png" alt="Ferrari" class="logo" width="250px" height="250px">
+            <img src="bose-seeklogo.png" alt="Bose" class="logo" width="250px" height="250px">
+            <img src="hp-seeklogo.png" alt="HP" class="logo">
+        </div>
+
+
+        <h2 class="mb-3">Weekly Newsletter</h2>
+        <p class="mb-4">Join Our Community And Never Miss An Update.</p>
+
+
+        <form class="d-flex justify-content-center">
+            <input type="email" class="form-control me-2" placeholder="enter mail id" required>
+            <button class="btn subscribe-btn" type="submit">subscribe</button>
+        </form>
+    </div>
+
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 text-center text-md-start">
+                    <img src="logo_1-removebg-preview.png" alt="Tech Nova Logo" class="footer-logo mb-2">
+                    <p class="tagline">“GADGETS REFINED.<br>QUALITY DEFINED.”</p>
+                </div>
+
+
+                <div class="col-md-2 footer-section mb-4">
+                    <h5>Our Store</h5>
+                    <ul class="list-unstyled">
+                        <li>Contact Us</li>
+                        <li>About Us</li>
+                        <li>Shipping & Delivery</li>
+                        <li>FAQ’s</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 footer-section mb-4">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Condition</li>
+                        <li>Return & Exchange</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 footer-section mb-4">
+                    <h5>Contact</h5>
+                    <p><i class='bx bx-location-plus'></i> 36, Ramakrishnapuram,<br>Thindugal - 657 984</p>
+                    <p><i class='bx bxs-phone'></i> 89378 64789, 64784 56483</p>
+                    <p><i class='bx bx-envelope'></i> Technova@Electronis.in</p>
+                </div>
+            </div>
+
+
+            <div class="row border-top pt-3 mt-3 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 copyright">Copyright © TECH NOVA. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="me-3 fw-bold">Follow Us</span>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-instagram fs-3'></i></a>
+                    <a href="#" class="text-white me-3"><i class='bx bxl-facebook fs-3'></i></a>
+                    <a href="#" class="text-white"><i class='bx bxl-google fs-3'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
